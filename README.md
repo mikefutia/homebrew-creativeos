@@ -10,7 +10,12 @@ creativeos-connector pair
 brew services start creativeos-connector
 ```
 
-Claude Code must already be installed and signed in on this computer.
+## Before You Start
+
+- Claude Code must already be installed and signed in on this computer.
+- Homebrew must already be installed.
+- On Mac, Apple Command Line Tools must be current enough for Homebrew. If Terminal says "Command Line Tools are too outdated," open System Settings > General > Software Update first.
+- If Software Update does not show the update, use Apple Developer Downloads for the exact Command Line Tools version named in Terminal.
 
 ## What The Connector Does
 
