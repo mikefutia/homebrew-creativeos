@@ -1,9 +1,9 @@
 class CreativeosConnector < Formula
   desc "Creative OS local connector for Claude Code"
   homepage "https://usecreativeos.com"
-  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.0/creativeos-connector-0.1.0.zip"
-  sha256 "d33d01db23ef47a797f6e51d5b6d4b9662e0f0970f05c1b604df60fa27ec5c8c"
-  version "0.1.0"
+  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.1/creativeos-connector-0.1.1.zip"
+  sha256 "61a241ab948247519ab0e8962b9a50e5207c19c5bf6f6a0dc91eb0741919e242"
+  version "0.1.1"
 
   depends_on "node"
 
@@ -32,7 +32,12 @@ class CreativeosConnector < Formula
         1. Make sure Claude Code is installed and signed in.
         2. In Creative OS, open Settings > Claude Code and generate a setup code.
         3. Run: creativeos-connector pair
-        4. Run: brew services start creativeos-connector
+        4. Run: claude setup-token
+        5. Run: creativeos-connector auth
+        6. Run: brew services restart creativeos-connector
+
+      If Terminal says claude is not found:
+        ~/.claude/local/claude setup-token
     EOS
   end
 

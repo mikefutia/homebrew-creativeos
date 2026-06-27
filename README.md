@@ -7,8 +7,16 @@ brew tap mikefutia/creativeos
 brew trust mikefutia/creativeos
 brew install creativeos-connector
 creativeos-connector pair
-brew services start creativeos-connector
+claude setup-token
+creativeos-connector auth
+brew services restart creativeos-connector
 ```
+
+`claude setup-token` creates the local Claude Code token used by background
+Creative OS runs. `creativeos-connector auth` saves it only on this computer.
+
+If `claude` is not on PATH, Mac users with Claude Code's local install can run
+`~/.claude/local/claude setup-token` instead.
 
 ## Before You Start
 
