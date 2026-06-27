@@ -4,6 +4,7 @@ Install the Creative OS Connector with Homebrew.
 
 ```sh
 brew tap mikefutia/creativeos
+brew trust mikefutia/creativeos
 brew install creativeos-connector
 creativeos-connector pair
 brew services start creativeos-connector
