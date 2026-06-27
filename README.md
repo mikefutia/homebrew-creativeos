@@ -18,12 +18,16 @@ Creative OS runs. `creativeos-connector auth` saves it only on this computer.
 If `claude` is not on PATH, Mac users with Claude Code's local install can run
 `~/.claude/local/claude setup-token` instead.
 
-For Meta Ads reporting in Creative OS, connect Meta to Claude Code after the
-connector is installed:
+For Meta Ads, Higgsfield, and HeyGen in Creative OS, connect those accounts to
+Claude Code after the connector is installed:
 
 ```sh
 creativeos-connector meta-auth
+creativeos-connector higgsfield-auth
+creativeos-connector heygen-auth
 ```
+
+Gemini, Firecrawl, and Apify stay as API-key connections inside Creative OS.
 
 ## Before You Start
 
