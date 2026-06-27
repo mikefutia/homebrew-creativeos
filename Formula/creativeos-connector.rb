@@ -1,9 +1,9 @@
 class CreativeosConnector < Formula
   desc "Creative OS local connector for Claude Code"
   homepage "https://usecreativeos.com"
-  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.4/creativeos-connector-0.1.4.zip"
-  sha256 "dae0276bce5d2213c540aecf0e7bc8c1ef822e55e1e94c9a037c28f4455a0d8e"
-  version "0.1.4"
+  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.5/creativeos-connector-0.1.5.zip"
+  sha256 "e062168b91361ba301bfac327405dc7d572b3d064d3171219d21eec440d77a78"
+  version "0.1.5"
 
   depends_on "node"
 
@@ -38,6 +38,9 @@ class CreativeosConnector < Formula
 
       If Terminal says claude is not found:
         ~/.claude/local/claude setup-token
+
+      To let Creative OS read Meta Ads reporting through Claude Code:
+        creativeos-connector meta-auth
     EOS
   end
 

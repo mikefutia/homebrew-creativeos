@@ -18,6 +18,13 @@ Creative OS runs. `creativeos-connector auth` saves it only on this computer.
 If `claude` is not on PATH, Mac users with Claude Code's local install can run
 `~/.claude/local/claude setup-token` instead.
 
+For Meta Ads reporting in Creative OS, connect Meta to Claude Code after the
+connector is installed:
+
+```sh
+creativeos-connector meta-auth
+```
+
 ## Before You Start
 
 - Claude Code must already be installed and signed in on this computer.
