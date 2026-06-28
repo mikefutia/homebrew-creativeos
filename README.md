@@ -20,7 +20,8 @@ If `claude` is not on PATH, Mac users with Claude Code's local install can run
 
 For Meta Ads, Higgsfield, and HeyGen in Creative OS, open Settings >
 Connections, expand the provider, then click Add. Creative OS asks the local
-connector to open a local sign-in helper through Claude Code.
+connector to open the provider sign-in through Claude Code and complete the
+local callback after you approve access in Chrome or Safari.
 
 Gemini, Firecrawl, and Apify stay as API-key connections inside Creative OS.
 
