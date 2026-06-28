@@ -1,10 +1,9 @@
 class CreativeosConnector < Formula
   desc "Creative OS local connector for Claude Code"
   homepage "https://usecreativeos.com"
-  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.8/creativeos-connector-0.1.8.zip"
-  sha256 "d02293cadca1fe61346a777d02a870140291053417f36960718b6412d790be12"
-  version "0.1.8"
-  revision 1
+  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.9/creativeos-connector-0.1.9.zip"
+  sha256 "5c4148a598c2a35007b4ea849aebeca0cd94636fae784861043376c7f5a3844f"
+  version "0.1.9"
 
   depends_on "node"
 
@@ -41,9 +40,7 @@ class CreativeosConnector < Formula
         ~/.claude/local/claude setup-token
 
       To connect provider accounts through Claude Code MCP:
-        creativeos-connector meta-auth
-        creativeos-connector higgsfield-auth
-        creativeos-connector heygen-auth
+        Open Creative OS > Settings > Connections, expand the provider, then click Add.
     EOS
   end
 
