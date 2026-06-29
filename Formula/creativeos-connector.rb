@@ -1,9 +1,9 @@
 class CreativeosConnector < Formula
   desc "Creative OS local connector for Claude Code"
   homepage "https://usecreativeos.com"
-  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.24/creativeos-connector-0.1.24.zip"
-  sha256 "262fd9d7417f2059709fef0ca3091953c1ff376b6eac9b331eb18fca946d0162"
-  version "0.1.24"
+  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.25/creativeos-connector-0.1.25.zip"
+  sha256 "a15ead4245224c4b0c6b7bf67cd24cff870a6e23a5d18dbba489c3f10962301b"
+  version "0.1.25"
 
   depends_on "node"
 
@@ -29,16 +29,13 @@ class CreativeosConnector < Formula
   def caveats
     <<~EOS
       Before starting the connector:
-        1. Make sure Claude Code is installed and signed in.
+        1. Make sure the Claude Code CLI is installed.
+           Mac default: brew install --cask claude-code
         2. In Creative OS, open Settings > Claude Code and create a pairing command.
         3. Paste the full pairing command into Terminal.
-        4. Open Claude Code and sign in if it asks.
-        5. Run: claude setup-token
-        6. Run: creativeos-connector auth
-        7. Run: brew services restart creativeos-connector
-
-      If Terminal says claude is not found:
-        ~/.claude/local/claude setup-token
+        4. Run: creativeos-connector auth
+        5. Finish Claude account sign-in if the authorization step opens it.
+        6. Run: brew services restart creativeos-connector
 
       To connect provider accounts through Claude Code MCP:
         Open Creative OS > Settings > Connections, expand the provider, then click Add.
