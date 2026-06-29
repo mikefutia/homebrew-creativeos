@@ -30,11 +30,12 @@ class CreativeosConnector < Formula
     <<~EOS
       Before starting the connector:
         1. Make sure Claude Code is installed and signed in.
-        2. In Creative OS, open Settings > Claude Code and generate a setup code.
-        3. Run: creativeos-connector pair
-        4. Run: claude setup-token
-        5. Run: creativeos-connector auth
-        6. Run: brew services restart creativeos-connector
+        2. In Creative OS, open Settings > Claude Code and create a pairing command.
+        3. Paste the full pairing command into Terminal.
+        4. Open Claude Code and sign in if it asks.
+        5. Run: claude setup-token
+        6. Run: creativeos-connector auth
+        7. Run: brew services restart creativeos-connector
 
       If Terminal says claude is not found:
         ~/.claude/local/claude setup-token
