@@ -30,7 +30,7 @@ class CreativeosConnector < Formula
     <<~EOS
       Before starting the connector:
         1. Make sure the Claude Code CLI is installed.
-           Default: npm install -g @anthropic-ai/claude-code
+           Default: curl -fsSL https://claude.ai/install.sh | bash
         2. In Creative OS, open Settings > Claude Code and create a pairing command.
         3. Paste the full pairing command into Terminal.
         4. Run: creativeos-connector auth

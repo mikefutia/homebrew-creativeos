@@ -3,20 +3,19 @@
 Install the Creative OS Connector with Homebrew.
 
 ```sh
+curl -fsSL https://claude.ai/install.sh | bash
 brew tap mikefutia/creativeos
 brew trust mikefutia/creativeos
 brew install creativeos-connector
-creativeos-connector pair
-claude setup-token
+# Paste the full pairing command from Creative OS Settings > Claude Code.
 creativeos-connector auth
 brew services restart creativeos-connector
 ```
 
-`claude setup-token` creates the local Claude Code token used by background
-Creative OS runs. `creativeos-connector auth` saves it only on this computer.
-
-If `claude` is not on PATH, Mac users with Claude Code's local install can run
-`~/.claude/local/claude setup-token` instead.
+The Claude Code CLI install creates the local `claude` terminal command.
+The pairing command registers this computer with Creative OS.
+`creativeos-connector auth` asks the local Claude Code terminal tool for
+background authorization and saves it only on this computer.
 
 For Meta Ads, Higgsfield, and HeyGen in Creative OS, open Settings >
 Connections, expand the provider, then click Add. Creative OS asks the local
@@ -27,7 +26,7 @@ Gemini, Firecrawl, and Apify stay as API-key connections inside Creative OS.
 
 ## Before You Start
 
-- Claude Code must already be installed and signed in on this computer.
+- Claude Code CLI must be installed on this computer. The Claude web app or desktop app alone is not enough.
 - Homebrew must already be installed.
 - On Mac, Apple Command Line Tools must be current enough for Homebrew. If Terminal says "Command Line Tools are too outdated," open System Settings > General > Software Update first.
 - If Software Update does not show the update, use Apple Developer Downloads for the exact Command Line Tools version named in Terminal.
