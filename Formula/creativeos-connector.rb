@@ -1,9 +1,9 @@
 class CreativeosConnector < Formula
   desc "Creative OS local connector for Claude Code"
   homepage "https://usecreativeos.com"
-  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.68/creativeos-connector-0.1.68.zip"
-  sha256 "d785e0027b5f43b1be1dce18001c8f989eb6922e6c3be2d9de199661b3510c79"
-  version "0.1.68"
+  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.69/creativeos-connector-0.1.69.zip"
+  sha256 "282617b7484c60487ba9bd6237f8bc608fd8f48e034d55205732d736d7f0bfa7"
+  version "0.1.69"
 
   depends_on "node"
 
@@ -19,8 +19,13 @@ class CreativeosConnector < Formula
     chmod 0755, bin/"creativeos-connector"
   end
 
+  def post_install
+    (var/"log").mkpath
+  end
+
   service do
     run [opt_bin/"creativeos-connector", "run"]
+    process_type :interactive
     keep_alive true
     log_path var/"log/creativeos-connector.log"
     error_log_path var/"log/creativeos-connector.log"
