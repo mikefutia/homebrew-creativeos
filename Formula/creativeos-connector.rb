@@ -1,9 +1,9 @@
 class CreativeosConnector < Formula
   desc "Creative OS local connector for Claude Code"
   homepage "https://usecreativeos.com"
-  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.128/creativeos-connector-0.1.128.zip"
-  sha256 "178c13d1b831623d7bc1b9bb8811b142add122b8feb50c97f471be24ef90edd0"
-  version "0.1.128"
+  url "https://github.com/mikefutia/homebrew-creativeos/releases/download/creativeos-connector-v0.1.129/creativeos-connector-0.1.129.zip"
+  sha256 "f061c8708f3ba5e8e7038fb656aac169ad6abd11a38d678a5fa41eb90a396ac3"
+  version "0.1.129"
 
   depends_on "node"
 
