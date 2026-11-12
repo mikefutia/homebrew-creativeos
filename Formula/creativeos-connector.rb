@@ -19,8 +19,14 @@ class CreativeosConnector < Formula
     chmod 0755, bin/"creativeos-connector"
   end
 
-  def post_install
-    (var/"log").mkpath
+  if respond_to?(:post_install_steps)
+    post_install_steps do
+      mkdir_p "log", base: :var
+    end
+  else
+    def post_install
+      (var/"log").mkpath
+    end
   end
 
   service do
